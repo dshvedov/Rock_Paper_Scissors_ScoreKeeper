@@ -1,112 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="8dp"
-                android:text="Player A" />
+                android:padding="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/playerA" />
 
             <TextView
                 android:id="@+id/player_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
+                style="@style/TextScore"
+                android:layout_marginBottom="@dimen/margin"
                 android:text="0" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonMove"
                 android:onClick="countAR"
-                android:text="Rock" />
+                android:text="@string/rock" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonMove"
                 android:onClick="countAP"
-                android:text="Paper" />
+                android:text="@string/paper" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonMove"
                 android:onClick="countAS"
-                android:text="Scissors" />
+                android:text="@string/scissors" />
         </LinearLayout>
+
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"
-            />
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="0dp"
+            android:background="@android:color/darker_gray" />
 
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="8dp"
-                android:text="Player B" />
+                android:padding="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/playerB" />
 
             <TextView
                 android:id="@+id/player_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
+                style="@style/TextScore"
+                android:layout_marginBottom="@dimen/margin"
                 android:text="0" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonMove"
                 android:onClick="countBR"
-                android:text="Rock" />
+                android:text="@string/rock" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonMove"
                 android:onClick="countBP"
-                android:text="Paper" />
+                android:text="@string/paper" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonMove"
                 android:onClick="countBS"
-                android:text="Scissors" />
+                android:text="@string/scissors" />
         </LinearLayout>
 
     </LinearLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin"
         android:onClick="scoreReset"
-        android:text="Reset" />
+        android:text="@string/reset" />
 </RelativeLayout>
 

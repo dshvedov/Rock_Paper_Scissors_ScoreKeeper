@@ -1,3 +1,12 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Rock/Paper/Scissors Counter</string>
+    <string name="playerA">Player A</string>
+    <string name="playerB">Player B</string>
+    <string name="reset">reset</string>
+    <string name="rock">rock</string>
+    <string name="paper">paper</string>
+    <string name="scissors">scissors</string>
+    <string name="waiting">Waiting for <xliff:g example="Player A" id="player">%s</xliff:g> move</string>
+    <string name="tie">The result is a tie!</string>
+    <string name="win"><xliff:g example="Player A" id="player">%s</xliff:g> <xliff:g example="paper" id="move">%s</xliff:g> wins!</string>
 </resources>
